@@ -12,3 +12,5 @@ INSERT INTO configuration (configuration_id, configuration_title, configuration_
 (NULL, 'Piwik Report Period', 'PIWIK_REPORT_PERIOD', 'day', 'Enter the desired report period for your report. Options:day,week,month,year', @configuration_group_id, 1, NOW(), NULL, NULL),
 (NULL, 'Piwik Report Date', 'PIWIK_REPORT_DATE', 'yesterday', 'Enter the desired report day for your report. Options:today,yesterday', @configuration_group_id, 1, NOW(), NULL, NULL),
 (NULL, 'Piwik Token Auth', 'PIWIK_TOKEN_AUTH', '', 'Enter your Piwik Analytics token_auth. You could create a new user that has view access to this site and use that token_auth.', @configuration_group_id, 1, NOW(), NULL, NULL);
+
+INSERT INTO admin_pages (page_key, language_key, main_page, page_params, menu_key, display_on_menu, sort_order) VALUES ('PiwikEcommerce', 'BOX_REPORTS_PIWIKECOMMERCE', 'FILENAME_PIWIKECOMMERCE', '', 'reports', 'Y', 999);

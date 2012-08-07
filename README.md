@@ -1,6 +1,8 @@
 Name
 ====
-Piwik Ecommerce for ZenCart version 1.3.9 and lower
+Piwik Ecommerce for ZenCart version 1.5
+
+Go [here](https://github.com/eristoddle/Piwik-Ecommerce-for-Zen-Cart) for the plugin that works on version 1.3.9 or older.
 
 Version Date
 ============
@@ -23,21 +25,22 @@ Affected files
 Changed files
 -------------
 tpl_footer.php in your current template
+tpl_shopping_cart_default.php in your current template
+tpl_checkout_success_default.php in your current template
 
 New files
 ---------
 - /includes/templates/YOUR_TEMPLATE/common/tpl_footer_piwik.php
 - /includes/templates/YOUR_TEMPLATE/templates/tpl_shopping_cart_default.php
 - /includes/templates/YOUR_TEMPLATE/templates/tpl_checkout_success_default.php
-- /functions/includes/PiwikEcommerce.php
-- /admin/includes/PiwikEcommerce.php
-- /admin/includes/boxes/extra_boxes/PiwikEcommerce_tools_dhtml.php
-- /admin/includes/extra_datafiles/PiwikEcommerce.php
-- /admin/includes/languages/english/extra_definitions/PiwikEcommerce.php
+- /functions/includes/piwikecommerce.php
+- /admin/includes/piwikecommerce.php
+- /admin/includes/extra_datafiles/piwikecommerce.php
+- /admin/includes/languages/english/extra_definitions/piwikecommerce.php
 
 Affects DB
 ==========
-Yes (creates new records into configuration_group and configuration tables)
+Yes (creates new records into configuration_group, configuration tables and new admin pages)
 
 DISCLAIMER
 ==========
